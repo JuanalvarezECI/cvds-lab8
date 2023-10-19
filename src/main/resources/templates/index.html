@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMPLOYEES LIST</title>
+</head>
+<body>
+<h1>EMPLOYEES LIST</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>ACTIONS</th>
+    </tr>
+    <!-- Aquí se generará dinámicamente la lista de empleados -->
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>
+            <button onclick="location.href='update'">UPDATE</button>
+            <button onclick="confirmDelete()">DELETE</button>
+        </td>
+    </tr>
+    <!-- Más filas de empleados aquí -->
+</table>
+<button onclick="location.href='nuevo'">NEW</button>
+
+<script>
+    function confirmDelete() {
+        if (confirm("Are you sure you want to delete this employee?")) {
+            // Redirigir a la página de eliminación o ejecutar la lógica de eliminación
+            location.href = 'delete';
+        }
+    }
+</script>
+</body>
+</html>
